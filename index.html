@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CarsA</title>
+    <link rel="stylesheet" href="style.css"> <!-- legatura cu fisierul css-->
+</head>
+<body>
+<div class="main">
+      <nav><!-- 
+        Elementul HTML <nav> este folosit pentru a defini
+             o secțiune a documentului care conține link-uri
+              de navigare sau alte elemente de navigare
+               pentru o pagină web-->
+         <div class="logo">
+         <img src="C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\car.png">
+         </div>
+         <div class="nav-links">
+            <ul>
+                      <li><a href="#">Acasă</a></li>
+                      <li><a href="#">Modelele noastre</a></li>
+                      <li><a href="#">Accesorii</a></li>
+                      <li><a href="#">Achiziție</a></li>
+            </ul>
+         </div>
+      </nav>
+        <div class="information">
+            <div class="overlay"></div>
+            <img src=  "C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\cars.png"   class="cars">
+            <div id="circle">
+                <div class="feature one">
+                    <img src="C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\combustibil.png">
+                    <div>
+                        <h3>Elemente esențiale</h3>
+                        <p> Consum 0.8-7.8 litri/100 km</p>
+                    </div>
+                </div>
+                <div class="feature two">
+                    <img src="C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\setting.png">
+                <div>
+                    <h3>Configurare autovehicul</h3>
+                <p>Tu alegi, noi facem magie</p>
+                </div>
+                </div>
+                <div class="feature three">
+                    <img src="C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\testdrive.png">
+               <div>
+                    <h3>Test drive</h3>
+                    <p>Programează-te acum </p>
+                    </div>
+                    </div>
+             </div>
+             </div>
+              <div class="controls">
+                <img src= "C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\jos.png" id="upBtn">
+                <h4>Descoperă</h4>
+                <img src="C:\Users\admin\OneDrive - Colegiul National Grigore Moisil Bucuresti\Desktop\myWork\CarsA.web\img.CarsA\sus.png" id="downBtn">
+              </div>
+              </div>
+                
+   <script>
+    var circle=document.getElementById("circle");
+    var upBtn=document.getElementById("upBtn");
+    var downBtn=document.getElementById("downBtn");
+
+    var roatateValue=circle.style.transform;
+    var rotateSum;
+
+
+    upBtn.onclick= function()
+   {
+
+    rotateSum=roatateValue + "rotate(-90deg)";
+    circle.style.transform=rotateSum;
+    roatateValue=rotateSum;
+   }
+   downBtn.onclick= function()
+   {
+
+    rotateSum=roatateValue + "rotate(90deg)";
+    circle.style.transform=rotateSum;
+    roatateValue=rotateSum;
+   }
+
+</script>
+
+
+    
+</body>
+</html>
